@@ -1,0 +1,17 @@
+.btn{
+    background-color: transparent;
+    position: relative;
+    color: $color-black;
+    text-decoration: none;
+    border: .2rem solid $color-secondary;
+    overflow: hidden;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    margin-top: 20px;
+    display: inline-block;
+    text-align: center;
+    transition: all .3s ease;
+    z-index: 5;
+    cursor: pointer;
+
+}
