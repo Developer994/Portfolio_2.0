@@ -49,3 +49,6 @@
   text-align: center;
   padding-top: 30px;
   width: 100vw; }
+  .container #abtMeContainer {
+    display: inline-block;
+    width: 40%; }

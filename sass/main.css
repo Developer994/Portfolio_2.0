@@ -58,4 +58,20 @@
 #btn1, #btn2, #btn3, #btn4 {
   margin-right: 2%;
 }
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  padding-top: 30px;
+  width: 100vw;
+}
+
+.container #abtMeContainer {
+  display: inline-block;
+  width: 40%;
+}
 /*# sourceMappingURL=main.css.map */
