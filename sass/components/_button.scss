@@ -14,4 +14,16 @@
     z-index: 5;
     cursor: pointer;
 
+    &:hover {
+        background-color: $color-tertiary;
+        color: $color-primary;
+        transform: translateY(-3px);
+        border-radius: 100px;
+        box-shadow: 0 1rem 2rem rgba($color-black, .2);
+
+        &::before {
+            height: 380%;
+        }
+    }
+
 }
