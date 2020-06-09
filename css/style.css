@@ -56,6 +56,16 @@
     display: inline-block;
     width: 40%; }
 
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+  margin-bottom: 6%; }
+  .row:not(:last-child) {
+    margin-bottom: 8%; }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6%) / 3);
+    background-color: red; }
+
 #header {
   margin-top: 50px;
   display: inline-block;
