@@ -52,3 +52,15 @@
   .container #abtMeContainer {
     display: inline-block;
     width: 40%; }
+
+#header {
+  margin-top: 50px;
+  display: inline-block;
+  width: 40%;
+  font-size: 70px;
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  font-style: normal;
+  position: relative;
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text; }
