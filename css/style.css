@@ -41,6 +41,13 @@
 #btn1, #btn2, #btn3, #btn4 {
   margin-right: 2%; }
 
+.card {
+  background-color: orangered;
+  height: 27rem;
+  transition: all .8s; }
+  .card:hover {
+    transform: rotateY(190deg); }
+
 * {
   padding: 0;
   margin: 0; }
@@ -62,9 +69,16 @@
   margin-bottom: 6%; }
   .row:not(:last-child) {
     margin-bottom: 8%; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6%; }
   .row .col-1-of-3 {
-    width: calc((100% - 2 * 6%) / 3);
-    background-color: red; }
+    width: calc((100% - 2 * 6%) / 3); }
 
 #header {
   margin-top: 50px;
