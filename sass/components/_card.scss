@@ -60,10 +60,28 @@
     }
 
     &__heading {
-        font-size: 2.8rem;
-        font-weight: 300;
+        font-family: "lato", sans-serif;
+        font-size: 2.0rem;
+        font-weight: 100;
         text-transform: uppercase;
+        text-align: right;
         color: $color-white;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        width: 60%;
+    }
+
+    &__heading-span {
+        padding: 0.3rem .8rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+
+        &--1 {
+            background-image: linear-gradient(to right bottom,
+            rgba($color-card1-light, .85), 
+            rgba($color-card1-dark, .85));
+        }
     }
 }
 

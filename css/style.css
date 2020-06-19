@@ -80,10 +80,22 @@
     .card__picture--3 {
       background-image: url(../../assets/images/ClickyGame.JPG); }
   .card__heading {
-    font-size: 2.8rem;
-    font-weight: 300;
+    font-family: "lato", sans-serif;
+    font-size: 2.0rem;
+    font-weight: 100;
     text-transform: uppercase;
-    color: white; }
+    text-align: right;
+    color: white;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 60%; }
+  .card__heading-span {
+    padding: 0.3rem .8rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone; }
+    .card__heading-span--1 {
+      background-image: linear-gradient(to right bottom, rgba(240, 164, 42, 0.85), rgba(194, 130, 27, 0.85)); }
 
 * {
   padding: 0;
