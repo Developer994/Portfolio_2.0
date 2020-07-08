@@ -96,6 +96,10 @@
     box-decoration-break: clone; }
     .card__heading-span--1 {
       background-image: linear-gradient(to right bottom, rgba(240, 164, 42, 0.85), rgba(194, 130, 27, 0.85)); }
+  .card__details {
+    margin-top: 10%;
+    margin-left: 16%;
+    width: 70%; }
 
 * {
   padding: 0;
