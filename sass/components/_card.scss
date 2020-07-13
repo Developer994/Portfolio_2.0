@@ -18,7 +18,9 @@
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
         &--front {
-            background-color: $color-white;
+            &-1 {
+                background-image: linear-gradient(to right bottom, $color-card1-light, $color-card1-dark);
+            }
         }
 
         &--back {
@@ -88,6 +90,28 @@
         margin-top: 10%;
         margin-left: 16%;
         width: 70%;
+    }
+
+    &__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+
+        h4 {
+            color: beige;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            margin-bottom: 0px;
+            li {
+                text-align: center;
+                list-style: none;
+            }
+
+        }
     }
 }
 
