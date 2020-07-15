@@ -5,7 +5,18 @@
     position: relative;
     height: 27rem;
 
+    li, .card__details {
+        font-weight: bold;
+    }
+
+    .row__card1BtnRow {
+        position: fixed;
+        padding-top: 28px;
+        padding-left: 20px;
+    }
+
     &__side {
+        color: $color-black;
         height: 27rem;
         transition: all .8s ease;
         position: absolute;
@@ -21,6 +32,14 @@
             &-1 {
                 background-image: linear-gradient(to right bottom, $color-card1-light, $color-card1-dark);
             }
+
+            &-2 {
+                background-image: linear-gradient(to right bottom, $color-card2-light, $color-card2-dark);
+            }
+
+            &-3 {
+                background-image: linear-gradient(to right bottom, $color-card3-light, $color-card3-dark);
+            }
         }
 
         &--back {
@@ -28,6 +47,14 @@
 
             &-1 {
                 background-image: linear-gradient(to right bottom, $color-card1-light, $color-card1-dark);
+            }
+
+            &-2 {
+                background-image: linear-gradient(to right bottom, $color-card2-light, $color-card2-dark);
+            }
+
+            &-3 {
+                background-image: linear-gradient(to right bottom, $color-card3-light, $color-card3-dark);
             }
         }
     }
@@ -54,10 +81,10 @@
             background-image: linear-gradient(to right bottom, $color-card1-light, $color-card1-dark), url(../../assets/images/ClickyGame.JPG);
         }
         &--2 {
-            background-image: url(../../assets/images/ClickyGame.JPG);
+            background-image: linear-gradient(to right bottom, $color-card2-light, $color-card2-dark), url(../../assets/images/budgetfriendly.JPG);
         }
         &--3 {
-            background-image: url(../../assets/images/ClickyGame.JPG);
+            background-image:linear-gradient(to right bottom, $color-card3-light, $color-card3-dark), url(../../assets/images/Giphy.JPG);
         }
     }
 
@@ -83,6 +110,18 @@
             background-image: linear-gradient(to right bottom,
             rgba($color-card1-light, .85), 
             rgba($color-card1-dark, .85));
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom,
+            rgba($color-card2-light, .85), 
+            rgba($color-card2-dark, .85));
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom,
+            rgba($color-card3-light, .85), 
+            rgba($color-card3-dark, .85));
         }
     }
 
@@ -110,8 +149,8 @@
                 text-align: center;
                 list-style: none;
             }
-
         }
     }
+
 }
 

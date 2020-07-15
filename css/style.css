@@ -46,7 +46,14 @@
   -moz-perspective: 150rem;
   position: relative;
   height: 27rem; }
+  .card li, .card .card__details {
+    font-weight: bold; }
+  .card .row__card1BtnRow {
+    position: fixed;
+    padding-top: 28px;
+    padding-left: 20px; }
   .card__side {
+    color: black;
     height: 27rem;
     transition: all .8s ease;
     position: absolute;
@@ -59,10 +66,18 @@
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
     .card__side--front-1 {
       background-image: linear-gradient(to right bottom, #f0a42a, #c2821b); }
+    .card__side--front-2 {
+      background-image: linear-gradient(to right bottom, lightgreen, green); }
+    .card__side--front-3 {
+      background-image: linear-gradient(to right bottom, lightblue, blue); }
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #f0a42a, #c2821b); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, lightgreen, green); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to right bottom, lightblue, blue); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -76,9 +91,9 @@
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, #f0a42a, #c2821b), url(../../assets/images/ClickyGame.JPG); }
     .card__picture--2 {
-      background-image: url(../../assets/images/ClickyGame.JPG); }
+      background-image: linear-gradient(to right bottom, lightgreen, green), url(../../assets/images/budgetfriendly.JPG); }
     .card__picture--3 {
-      background-image: url(../../assets/images/ClickyGame.JPG); }
+      background-image: linear-gradient(to right bottom, lightblue, blue), url(../../assets/images/Giphy.JPG); }
   .card__heading {
     font-family: "lato", sans-serif;
     font-size: 2.0rem;
@@ -96,6 +111,10 @@
     box-decoration-break: clone; }
     .card__heading-span--1 {
       background-image: linear-gradient(to right bottom, rgba(240, 164, 42, 0.85), rgba(194, 130, 27, 0.85)); }
+    .card__heading-span--2 {
+      background-image: linear-gradient(to right bottom, rgba(144, 238, 144, 0.85), rgba(0, 128, 0, 0.85)); }
+    .card__heading-span--3 {
+      background-image: linear-gradient(to right bottom, rgba(173, 216, 230, 0.85), rgba(0, 0, 255, 0.85)); }
   .card__details {
     margin-top: 10%;
     margin-left: 16%;
