@@ -2,6 +2,7 @@ function website() {
     $('#abtMeContainer').show();
     $('#myExpContainer').hide();
     $('#myProjContainer').hide();
+    $('#contactContainer').hide();
 }
 website()
 
@@ -10,6 +11,7 @@ $('#btn1').on("click", function () {
     $('#abtMeContainer').show();
     $('#myExpContainer').hide();
     $('#myProjContainer').hide();
+    $('#contactContainer').hide();
 });
 
 $('#btn2').on("click", function () {
@@ -17,6 +19,7 @@ $('#btn2').on("click", function () {
     $('#abtMeContainer').hide();
     $('#myExpContainer').show();
     $('#myProjContainer').hide();
+    $('#contactContainer').hide();
 });
 
 $('#btn3').on("click", function () {
@@ -24,4 +27,13 @@ $('#btn3').on("click", function () {
     $('#abtMeContainer').hide();
     $('#myExpContainer').hide();
     $('#myProjContainer').show();
+    $('#contactContainer').hide();
+})
+
+$('#btn4').on("click", function () {
+    $('#header').html(" Contact <br> <br>")
+    $('#abtMeContainer').hide();
+    $('#myExpContainer').hide();
+    $('#myProjContainer').hide();
+    $('#contactContainer').show();
 })
