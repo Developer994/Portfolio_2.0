@@ -190,9 +190,17 @@
   font-family: Copperplate, "Copperplate Gothic Light", fantasy;
   font-style: normal;
   position: relative;
+  background: linear-gradient(to right, #414040 50%, #FF5858 50%, #CC2E5D);
   background-size: 200%;
   background-clip: text;
-  -webkit-background-clip: text; }
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: .8s ease-out; }
+  #header:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: .5rem 1rem 3.5rem black;
+    background-position: -100%;
+    transition: all .1s; }
 
 body {
   background-image: url(/assets/images/background5.png);
