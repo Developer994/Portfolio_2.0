@@ -45,7 +45,16 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 27rem; }
+  height: 27rem;
+  animation: moveUp 1s 1 ease; }
+
+@keyframes moveUp {
+  0% {
+    margin-top: 100px;
+    opacity: 0; }
+  100% {
+    margin-top: 0px;
+    opacity: 1; } }
   .card li, .card .card__details {
     font-weight: bold; }
   .card .row__card1BtnRow {
@@ -153,6 +162,14 @@
     transition: .5s ease-out; }
     .container .para1:hover, .container .para2:hover, .container .contact__info1:hover, .container .contact__info2:hover {
       text-shadow: .5rem 1rem 2rem black; }
+  .container .para1 {
+    animation: fadeIn 1s ease; }
+  .container .para2 {
+    animation: letterFade 1s ease-in; }
+  .container .contact__info1 {
+    animation: right 1s ease-out; }
+  .container .contact__info2 {
+    animation: left 1s ease-out; }
   .container #abtMeContainer {
     display: inline-block;
     width: 40%; }
@@ -162,6 +179,41 @@
   .container #myProjContainer {
     display: inline-block;
     width: 80%; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    margin-top: 20px; }
+  50% {
+    opacity: 50%;
+    margin-top: 60px; }
+  100% {
+    opacity: 100%; } }
+
+@keyframes letterFade {
+  0% {
+    color: white;
+    text-shadow: 10px 10px white; }
+  50% {
+    text-shadow: 2px 2px lightgray; }
+  100% {
+    text-shadow: black; } }
+
+@keyframes right {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 50%;
+    margin-right: 100px;
+    text-shadow: 100px 10px 5px #f0a42a; } }
+
+@keyframes left {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 50%;
+    margin-left: 100px;
+    text-shadow: 100px 10px 5px #f0a42a; } }
 
 .row {
   max-width: 114rem;

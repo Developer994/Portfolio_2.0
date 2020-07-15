@@ -13,6 +13,23 @@
         @include fontStyling;
     }
 
+    .para1 {
+        animation: fadeIn 1s ease;
+    }
+
+    .para2 {
+        animation: letterFade 1s ease-in;        
+    }
+
+    .contact__info1 {
+        animation: right 1s ease-out;
+        // text-shadow: 2px 2px blue;
+    }
+
+    .contact__info2 {
+        animation: left 1s ease-out;
+    }
+
    #abtMeContainer {
     display: inline-block;
     width: 40%;
@@ -27,4 +44,67 @@
     display: inline-block;
     width: 80%;
    }
+
+   @keyframes fadeIn {
+
+        0% {
+            opacity: 0;
+            margin-top: 20px;
+        }
+
+        50% {
+            opacity: 50%;
+            margin-top: 60px;
+        }
+
+        100% {
+            opacity: 100%;
+        }
+
+    }
+
+    @keyframes letterFade {
+        
+        0% {
+            color: $color-white;
+            text-shadow: 10px 10px white ;
+        }
+
+        50% {
+            text-shadow: 2px 2px lightgray ;
+        }
+
+        100% {
+            text-shadow: black;
+            // color: $color-prim;
+        }
+
+    }
+
+    @keyframes right {
+
+        0% {
+            opacity: 0; 
+        }
+
+        50% {
+            opacity: 50%;
+            margin-right: 100px;
+            text-shadow: 100px 10px 5px $color-card1-light;
+        }
+    }
+
+    @keyframes left {
+
+        0% {
+            opacity: 0; 
+        }
+
+        50% {
+            opacity: 50%;
+            margin-left: 100px;
+            text-shadow: 100px 10px 5px $color-card1-light;
+        }
+
+    }
 }
