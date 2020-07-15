@@ -8,6 +8,11 @@
     padding-top: 30px;
     width: 100vw;
 
+    .para1, .para2, .contact__info1, .contact__info2 {
+        // See mixins.scss for the properties of font styling
+        @include fontStyling;
+    }
+
    #abtMeContainer {
     display: inline-block;
     width: 40%;

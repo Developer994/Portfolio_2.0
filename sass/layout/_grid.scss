@@ -18,6 +18,12 @@
         }
     }
 
+    .col-1-of-2{
+        // All columns will have a gutter on the right, except the last column
+        width: calc((100% - #{$gutter-horizontal}) / 2)
+    }
+
+
     .col-1-of-3 {
         width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
     }

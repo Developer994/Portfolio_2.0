@@ -15,6 +15,12 @@
         padding-left: 20px;
     }
 
+    .row__card3BtnRow {
+        position: absolute;
+        padding-top: 35px;
+        padding-left: 20px;
+    }
+
     &__side {
         color: $color-black;
         height: 27rem;
@@ -84,7 +90,7 @@
             background-image: linear-gradient(to right bottom, $color-card2-light, $color-card2-dark), url(../../assets/images/budgetfriendly.JPG);
         }
         &--3 {
-            background-image:linear-gradient(to right bottom, $color-card3-light, $color-card3-dark), url(../../assets/images/Giphy.JPG);
+            background-image:linear-gradient(to right bottom, $color-card3-light, $color-card3-dark), url(../../assets/images/ClickyGame.JPG);
         }
     }
 
@@ -137,7 +143,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         width: 90%;
-
+        
         h4 {
             color: beige;
             margin-bottom: 20px;

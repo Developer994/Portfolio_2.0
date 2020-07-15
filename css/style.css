@@ -52,6 +52,10 @@
     position: fixed;
     padding-top: 28px;
     padding-left: 20px; }
+  .card .row__card3BtnRow {
+    position: absolute;
+    padding-top: 35px;
+    padding-left: 20px; }
   .card__side {
     color: black;
     height: 27rem;
@@ -93,7 +97,7 @@
     .card__picture--2 {
       background-image: linear-gradient(to right bottom, lightgreen, green), url(../../assets/images/budgetfriendly.JPG); }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, lightblue, blue), url(../../assets/images/Giphy.JPG); }
+      background-image: linear-gradient(to right bottom, lightblue, blue), url(../../assets/images/ClickyGame.JPG); }
   .card__heading {
     font-family: "lato", sans-serif;
     font-size: 2.0rem;
@@ -142,6 +146,13 @@
   text-align: center;
   padding-top: 30px;
   width: 100vw; }
+  .container .para1, .container .para2, .container .contact__info1, .container .contact__info2 {
+    color: silver;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    transition: .5s ease-out; }
+    .container .para1:hover, .container .para2:hover, .container .contact__info1:hover, .container .contact__info2:hover {
+      text-shadow: .5rem 1rem 2rem black; }
   .container #abtMeContainer {
     display: inline-block;
     width: 40%; }
@@ -166,6 +177,8 @@
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6%; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6%) / 2); }
   .row .col-1-of-3 {
     width: calc((100% - 2 * 6%) / 3); }
 
@@ -180,3 +193,7 @@
   background-size: 200%;
   background-clip: text;
   -webkit-background-clip: text; }
+
+body {
+  background-image: url(/assets/images/background5.png);
+  background-size: 100vw; }
