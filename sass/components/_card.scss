@@ -3,7 +3,7 @@
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
-    height: 27rem;
+    height: 20rem;
     animation: moveUp 1s 1 ease;
 
     @keyframes moveUp {
@@ -22,6 +22,7 @@
 
     li, .card__details {
         font-weight: bold;
+        font-size: 1.2rem;
     }
 
     .row__card1BtnRow {
@@ -38,7 +39,7 @@
 
     &__side {
         color: $color-black;
-        height: 27rem;
+        height: 35rem;
         transition: all .8s ease;
         position: absolute;
         top: 0;
@@ -92,7 +93,7 @@
     // FRONT SIDE STYLING
     &__picture {
         background-size: cover;
-        height: 12rem;
+        height: 20rem;
         background-blend-mode: screen;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
@@ -105,7 +106,7 @@
             background-image: linear-gradient(to right bottom, $color-card2-light, $color-card2-dark), url(../../assets/images/budgetfriendly.JPG);
         }
         &--3 {
-            background-image:linear-gradient(to right bottom, $color-card3-light, $color-card3-dark), url(../../assets/images/ClickyGame.JPG);
+            background-image:linear-gradient(to right bottom, $color-card3-light, $color-card3-dark), url(../../assets/images/Giphy.JPG);
         }
     }
 

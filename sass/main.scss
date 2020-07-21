@@ -1,14 +1,12 @@
 @import "abstract/mixins";
 @import "abstract/variables";
 
+@import "base/base";
+@import "base/typography";
+
 @import "components/button";
 @import "components/card";
 @import "components/container";
 
 @import "layout/grid";
 @import "layout/header";
-
-body {
-    background-image: url(/assets/images/background5.png);
-    background-size: 100vw;
-}

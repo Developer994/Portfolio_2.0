@@ -1,3 +1,44 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  box-sizing: border-box;
+  background-image: url(/assets/images/background5.png);
+  background-size: 100vw; }
+  @media (max-width: 56.25em) {
+    body {
+      padding: 0; } }
+
+.para1, .para2, .contact__info1, .contact__info2 {
+  color: silver;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  transition: .5s ease-out; }
+  .para1:hover, .para2:hover, .contact__info1:hover, .contact__info2:hover {
+    text-shadow: .5rem 1rem 2rem black; }
+  @media (max-width: 56.25em) {
+    .para1, .para2, .contact__info1, .contact__info2 {
+      font-size: 2rem; } }
+  @media (max-width: 37.5em) {
+    .para1, .para2, .contact__info1, .contact__info2 {
+      font-size: 1.5rem; } }
+
 .btn {
   background-color: transparent;
   position: relative;
@@ -45,7 +86,7 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 27rem;
+  height: 20rem;
   animation: moveUp 1s 1 ease; }
 
 @keyframes moveUp {
@@ -56,7 +97,8 @@
     margin-top: 0px;
     opacity: 1; } }
   .card li, .card .card__details {
-    font-weight: bold; }
+    font-weight: bold;
+    font-size: 1.2rem; }
   .card .row__card1BtnRow {
     position: fixed;
     padding-top: 28px;
@@ -67,7 +109,7 @@
     padding-left: 20px; }
   .card__side {
     color: black;
-    height: 27rem;
+    height: 35rem;
     transition: all .8s ease;
     position: absolute;
     top: 0;
@@ -97,7 +139,7 @@
     transform: rotateY(0); }
   .card__picture {
     background-size: cover;
-    height: 12rem;
+    height: 20rem;
     background-blend-mode: screen;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
@@ -106,7 +148,7 @@
     .card__picture--2 {
       background-image: linear-gradient(to right bottom, lightgreen, green), url(../../assets/images/budgetfriendly.JPG); }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, lightblue, blue), url(../../assets/images/ClickyGame.JPG); }
+      background-image: linear-gradient(to right bottom, lightblue, blue), url(../../assets/images/Giphy.JPG); }
   .card__heading {
     font-family: "lato", sans-serif;
     font-size: 2.0rem;
@@ -147,21 +189,10 @@
         text-align: center;
         list-style: none; }
 
-* {
-  padding: 0;
-  margin: 0; }
-
 .container {
   text-align: center;
   padding-top: 30px;
   width: 100vw; }
-  .container .para1, .container .para2, .container .contact__info1, .container .contact__info2 {
-    color: silver;
-    font-family: 'Oswald', sans-serif;
-    font-size: 20px;
-    transition: .5s ease-out; }
-    .container .para1:hover, .container .para2:hover, .container .contact__info1:hover, .container .contact__info2:hover {
-      text-shadow: .5rem 1rem 2rem black; }
   .container .para1 {
     animation: fadeIn 1s ease; }
   .container .para2 {
@@ -221,6 +252,12 @@
   margin-bottom: 6%; }
   .row:not(:last-child) {
     margin-bottom: 8%; }
+    @media (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 8%; } }
+  @media (max-width: 56.25em) {
+    .row {
+      max-width: 30rem; } }
   .row::after {
     content: "";
     display: table;
@@ -229,6 +266,13 @@
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6%; }
+      @media (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 60%; } }
+    @media (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 6%) / 2); }
   .row .col-1-of-3 {
@@ -238,7 +282,7 @@
   margin-top: 50px;
   display: inline-block;
   width: 40%;
-  font-size: 70px;
+  font-size: 7rem;
   font-family: Copperplate, "Copperplate Gothic Light", fantasy;
   font-style: normal;
   position: relative;
@@ -248,12 +292,14 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: .8s ease-out; }
+  @media (max-width: 56.25em) {
+    #header {
+      font-size: 6rem; } }
+  @media (max-width: 37.5em) {
+    #header {
+      font-size: 5rem; } }
   #header:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: .5rem 1rem 3.5rem black;
     background-position: -100%;
     transition: all .1s; }
-
-body {
-  background-image: url(/assets/images/background5.png);
-  background-size: 100vw; }

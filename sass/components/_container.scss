@@ -1,17 +1,7 @@
-*{
-    padding: 0;
-    margin: 0;
-}
-
 .container {
     text-align: center;
     padding-top: 30px;
     width: 100vw;
-
-    .para1, .para2, .contact__info1, .contact__info2 {
-        // See mixins.scss for the properties of font styling
-        @include fontStyling;
-    }
 
     .para1 {
         animation: fadeIn 1s ease;

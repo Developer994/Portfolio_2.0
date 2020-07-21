@@ -2,7 +2,7 @@
     margin-top: 50px;
     display: inline-block;
     width: 40%;
-    font-size: 70px;
+    font-size: 7rem;
     font-family: Copperplate, "Copperplate Gothic Light", fantasy;
     font-style: normal;
     position: relative;
@@ -12,6 +12,14 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: .8s ease-out;
+
+        @include respond(tab-port) {
+            font-size: 6rem;
+        }
+
+        @include respond(phone) {
+            font-size: 5rem;
+        }
 
     &:hover {
         transform: skewY(2deg) skewX(15deg) scale(1.1);

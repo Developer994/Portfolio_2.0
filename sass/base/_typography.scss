@@ -1,0 +1,13 @@
+
+.para1, .para2, .contact__info1, .contact__info2 {
+    // See mixins.scss for the properties of font styling
+    @include fontStyling;
+
+    @include respond(tab-port) {
+        font-size: 2rem;
+    }
+
+    @include respond(phone) {
+        font-size: 1.5rem;
+    }
+}
