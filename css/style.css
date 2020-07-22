@@ -87,7 +87,8 @@ body {
   -moz-perspective: 150rem;
   position: relative;
   height: 20rem;
-  animation: moveUp 1s 1 ease; }
+  animation: moveUp 1s 1 ease;
+  margin-bottom: 20rem; }
 
 @keyframes moveUp {
   0% {
@@ -96,20 +97,42 @@ body {
   100% {
     margin-top: 0px;
     opacity: 1; } }
-  .card li, .card .card__details {
-    font-weight: bold;
+  .card li {
     font-size: 1.2rem; }
+  .card .card__details {
+    font-weight: bold;
+    font-size: 1.3rem; }
   .card .row__card1BtnRow {
-    position: fixed;
-    padding-top: 28px;
-    padding-left: 20px; }
+    margin-top: 20%;
+    width: 100%; }
+    @media (max-width: 56.25em) {
+      .card .row__card1BtnRow {
+        margin-top: 37%; } }
+    @media (max-width: 75em) {
+      .card .row__card1BtnRow .btn__projectCard1 {
+        padding: 5% 15%; } }
+  .card .row__card2BtnRow {
+    margin-top: 22%; }
+    @media (max-width: 56.25em) {
+      .card .row__card2BtnRow {
+        margin-top: -10%; } }
+    @media (max-width: 75em) {
+      .card .row__card2BtnRow {
+        margin-top: 16%; } }
+    @media (max-width: 75em) {
+      .card .row__card2BtnRow .btn__projectCard2 {
+        padding: 5% 15%; } }
   .card .row__card3BtnRow {
-    position: absolute;
-    padding-top: 35px;
-    padding-left: 20px; }
+    margin-top: 22%; }
+    @media (max-width: 56.25em) {
+      .card .row__card3BtnRow {
+        margin-top: 42%; } }
+    @media (max-width: 75em) {
+      .card .row__card3BtnRow .btn__projectCard3 {
+        padding: 5% 15%; } }
   .card__side {
     color: black;
-    height: 35rem;
+    height: 35.5rem;
     transition: all .8s ease;
     position: absolute;
     top: 0;
@@ -119,6 +142,9 @@ body {
     border-radius: 3px;
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    @media (max-width: 56.25em) {
+      .card__side {
+        height: 40rem; } }
     .card__side--front-1 {
       background-image: linear-gradient(to right bottom, #f0a42a, #c2821b); }
     .card__side--front-2 {
@@ -151,7 +177,7 @@ body {
       background-image: linear-gradient(to right bottom, lightblue, blue), url(../../assets/images/Giphy.JPG); }
   .card__heading {
     font-family: "lato", sans-serif;
-    font-size: 2.0rem;
+    font-size: 3.0rem;
     font-weight: 100;
     text-transform: uppercase;
     text-align: right;
@@ -180,9 +206,16 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%; }
+    .card__cta-1 {
+      top: 66%; }
+    .card__cta-2 {
+      top: 50%; }
+    .card__cta-3 {
+      top: 66%; }
     .card__cta h4 {
       color: beige;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      font-size: 1.3rem; }
     .card__cta ul {
       margin-bottom: 0px; }
       .card__cta ul li {
@@ -192,7 +225,7 @@ body {
 .container {
   text-align: center;
   padding-top: 30px;
-  width: 100vw; }
+  width: 100%; }
   .container .para1 {
     animation: fadeIn 1s ease; }
   .container .para2 {
@@ -269,7 +302,7 @@ body {
       @media (max-width: 56.25em) {
         .row [class^="col-"]:not(:last-child) {
           margin-right: 0;
-          margin-bottom: 60%; } }
+          margin-bottom: 6%; } }
     @media (max-width: 56.25em) {
       .row [class^="col-"] {
         width: 100% !important; } }
