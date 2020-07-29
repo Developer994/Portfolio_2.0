@@ -1,0 +1,121 @@
+.menu-wrap {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    @include respond(phone) {
+        display: inline-block;
+    }
+    
+    &__toggler {
+        z-index: 2;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        opacity: 0;
+    }
+
+    &__hamburger {
+        z-index: 1;
+        width: 60px;
+        height: 60px;
+        padding: 1rem;
+        background: $color-primary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    // Hamburger Line
+    &__hamburger > div {
+        position: relative;
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s ease;
+    }
+
+    &__hamburger > div::before,
+    &__hamburger > div::after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: -10px;
+        width: 100%;
+        height: 2px;
+        background: inherit;
+    }
+
+    // Moves line down
+    &__hamburger > div::after{
+        top:10px;
+    }
+
+    &__toggler:checked + &__hamburger > div {
+        transform: rotate(135deg);
+    }  
+    
+    &__toggler:checked + &__hamburger > div:before,
+    &__toggler:checked + &__hamburger > div:after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    // Show menu 
+    &__toggler:checked ~ .menu {
+        visibility: visible;
+    }
+
+    &__toggler:checked ~ .menu > div {
+        transform: scale(1);
+        transition-duration: 0.75s;
+    }
+
+    &__toggler:checked ~ .menu > div > div {
+        opacity: 1;
+        transition: opacity 0.4s ease;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+
+    .menu > div {
+        background: $color-secondary;
+        /* border-radius: 50%; */
+        width: 200vw;
+        height: 200vw;
+        display: flex;
+        flex: none;
+        opacity: 80%;
+        align-items: center;
+        justify-content: center;
+        transform: scale(0);
+        transition: all .4s ease; 
+    }
+
+    .menu > div > div > ul > li {
+        // list-style: none;
+        color: #fff;
+        font-size: 1.5rem;
+        padding: 1rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+
+}
