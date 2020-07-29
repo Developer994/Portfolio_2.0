@@ -7,6 +7,10 @@
     animation: moveUp 1s 1 ease;
     margin-bottom: 20rem;
 
+    @include respond(tab-port) {
+        animation: none;
+    }
+
     @keyframes moveUp {
 
         0% {

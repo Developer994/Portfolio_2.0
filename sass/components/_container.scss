@@ -6,19 +6,34 @@
 
     .para1 {
         animation: fadeIn 1s ease;
+        
+        @include respond(tab-port) {
+            animation: none;
+        }
     }
 
     .para2 {
-        animation: letterFade 1s ease-in;        
+        animation: letterFade 1s ease-in;  
+
+        @include respond(tab-port) {
+            animation: none;
+        }      
     }
 
     .contact__info1 {
         animation: right 1s ease-out;
-        // text-shadow: 2px 2px blue;
+
+        @include respond(tab-port) {
+            animation: none;
+        }
     }
 
     .contact__info2 {
         animation: left 1s ease-out;
+
+        @include respond(tab-port) {
+            animation: none;
+        }
     }
 
    #abtMeContainer {
