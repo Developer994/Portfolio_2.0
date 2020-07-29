@@ -378,10 +378,11 @@ body {
     width: 60px;
     height: 60px;
     padding: 1rem;
-    background: silver;
+    background: #414040;
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    opacity: 70%; }
   .menu-wrap__hamburger > div {
     position: relative;
     width: 100%;
